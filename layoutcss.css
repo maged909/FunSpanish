@@ -1,0 +1,12 @@
+.navbar{
+    background-color: #464660;
+}
+.navbar a{
+    font-size:2rem;
+}
+.spann{
+    color: #368B85;
+}
+div.hidden{
+    display: none;
+}

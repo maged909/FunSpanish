@@ -1,0 +1,40 @@
+body{
+    background-color: #F1E9E5;
+}
+nav div a.white{
+    color: #F1E9E5;
+}
+.spann{
+    color: #368B85;
+}
+.mainParagraph{
+    margin-top: 10%;
+    text-align: center;
+    padding:1.1rem;
+    font-weight: 500;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #464660;
+}
+.mainContainer{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+.startbtn{
+    border-radius: 10%;
+    background-color: #464660;
+    color: #F1E9E5;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.startbtn:hover{
+    border: 0.25rem solid #464660;
+    color: #F1E9E5;
+}
+.spanInParag:hover{
+    color: #368B85;
+    font-weight: 600;
+}
