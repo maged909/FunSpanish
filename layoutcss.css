@@ -1,0 +1,22 @@
+.navbar{
+    background-color: #464660;
+}
+.navbar a{
+    font-size:2rem;
+}
+.spann{
+    color: #368B85;
+}
+div.hidden,a.hidden,button.hidden{
+    display: none;
+}
+.center{
+    display: block;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #368B85;
+}

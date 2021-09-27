@@ -1,0 +1,111 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #464660;
+  min-height: 100vh;
+  align-items: center;
+
+  background-image:
+  radial-gradient(circle at 100% 150%, #464660 24%, #368B85 25%, #368B85 28%, #464660 29%, #464660 36%, #368B85 36%, #368B85 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0    150%, #464660 24%, #368B85 25%, #368B85 28%, #464660 29%, #464660 36%, #368B85 36%, #368B85 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50%  100%, #368B85 10%, #464660 11%, #464660 23%, #368B85 24%, #368B85 30%, #464660 31%, #464660 43%, #368B85 44%, #368B85 50%, #464660 51%, #464660 63%, #368B85 64%, #368B85 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, #368B85 5%, #464660 6%, #464660 15%, #368B85 16%, #368B85 20%, #464660 21%, #464660 30%, #368B85 31%, #368B85 35%, #464660 36%, #464660 45%, #368B85 46%, #368B85 49%, transparent 50%, transparent),
+  radial-gradient(circle at 0    50%, #368B85 5%, #464660 6%, #464660 15%, #368B85 16%, #368B85 20%, #464660 21%, #464660 30%, #368B85 31%, #368B85 35%, #464660 36%, #464660 45%, #368B85 46%, #368B85 49%, transparent 50%, transparent);
+  background-size:100px 50px;
+}
+
+.voiceinator {
+  padding: 2rem;
+  width: 50rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+  margin-top: 7rem;
+}
+
+h1 {
+  width: calc(100% + 4rem);
+  margin: -2rem 0 2rem -2rem;
+  padding: .5rem;
+  background: #464660;
+  border-bottom: 5px solid #84b1ae;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 100;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 3px 3px 0 #84b1ae;
+}
+
+.voiceinator input,
+.voiceinator button,
+.voiceinator select,
+.voiceinator textarea {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 0;
+  font-size: 2rem;
+  background: #F7F7F7;
+  outline: 0;
+}
+
+textarea {
+  height: 20rem;
+}
+
+/* input[type="select"] {
+
+} */
+
+.voiceinator button {
+  background: #464660;
+  border: 0;
+  width: 49%;
+  float: left;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 0;
+  font-size: 2rem;
+  border-bottom: 5px solid #84b1ae;
+  cursor: pointer;
+  position: relative;
+}
+
+.voiceinator button:active {
+  top: 2px;
+}
+
+.voiceinator button:nth-of-type(1) {
+  margin-right: 2%;
+}
+
+a.next{
+  padding: 1rem;
+  background-color: #464660;
+  font-size: 3rem;
+  color: white;
+  width: 4rem;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 630px) {
+  a.next{
+    position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  }
+}
