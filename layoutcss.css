@@ -7,7 +7,7 @@
 .spann{
     color: #368B85;
 }
-div.hidden,a.hidden{
+div.hidden,a.hidden,button.hidden{
     display: none;
 }
 .center{

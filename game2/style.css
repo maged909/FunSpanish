@@ -98,7 +98,14 @@ a.next{
   background-color: #464660;
   font-size: 3rem;
   color: white;
-  position: fixed;
+  width: 4rem;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 630px) {
+  a.next{
+    position: fixed;
   bottom: 1rem;
   right: 1rem;
+  }
 }

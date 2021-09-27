@@ -35,17 +35,35 @@ h1 {
   height: 400px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
 }
 
 .hole {
   flex: 1 0 33.33%;
   overflow: hidden;
   position: relative;
+ 
+  
 }
-@media screen and (max-width: 480px) {
+.mainContainer{
+  margin: auto;
 }
 
+.hitmoleBtn{
+  margin: auto;
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #464660;
+}
+@media screen and (max-width: 552px) {
+  .hole {
+    flex: 50%;
+  }
+  .game{
+    width: 300px;
+    height: 500px;
+  }
+}
 .hole:after {
   display: block;
   background: url(dirt.svg) bottom center no-repeat;
