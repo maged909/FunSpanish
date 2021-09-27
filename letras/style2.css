@@ -15,3 +15,6 @@ body,html {
       color: rgb(219, 61, 61);
       font-weight: 400;
   }
+.slap{
+  max-width: 100%;
+}
