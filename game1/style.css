@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 10px;
-  background: #ffc600;
+  
 }
 
 *, *:before, *:after {
@@ -11,17 +11,19 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Amatic SC', cursive;
+  background: #368B85;
 }
 
 h1 {
   text-align: center;
+  font-family: 'Amatic SC', cursive;
   font-size: 10rem;
   line-height: 1;
   margin-bottom: 0;
 }
 
 .score {
+  font-family: 'Amatic SC', cursive;
   background: rgba(255,255,255,0.2);
   padding: 0 3rem;
   line-height: 1;
@@ -40,6 +42,8 @@ h1 {
   flex: 1 0 33.33%;
   overflow: hidden;
   position: relative;
+}
+@media screen and (max-width: 480px) {
 }
 
 .hole:after {

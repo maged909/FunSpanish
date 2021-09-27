@@ -11,3 +11,7 @@ body,html {
       font-size: 3rem;
       display: block;
   }
+  .modalonetext{
+      color: rgb(219, 61, 61);
+      font-weight: 400;
+  }

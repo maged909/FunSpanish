@@ -7,6 +7,16 @@
 .spann{
     color: #368B85;
 }
-div.hidden{
+div.hidden,a.hidden{
     display: none;
+}
+.center{
+    display: block;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #368B85;
 }
