@@ -21,7 +21,9 @@ h1 {
   line-height: 1;
   margin-bottom: 0;
 }
-
+.hitscore{
+font-size: 8vw;
+}
 .score {
   font-family: 'Amatic SC', cursive;
   background: rgba(255,255,255,0.2);
@@ -31,8 +33,8 @@ h1 {
 }
 
 .game {
-  width: 600px;
-  height: 400px;
+  width: 900px;
+  height: 700px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -41,16 +43,22 @@ h1 {
   flex: 1 0 33.33%;
   overflow: hidden;
   position: relative;
- 
-  
 }
 .mainContainer{
   margin: auto;
+}
+div.modal *{
+  font-size: 2vw;
+}
+div.modal-body{
+  font-size: 4vw;
+  text-align: center;
 }
 
 .hitmoleBtn{
   margin: auto;
   display: block;
+  width: 100px;
   margin-top: 1rem;
   font-weight: bold;
   color: #464660;
@@ -70,7 +78,7 @@ h1 {
   background-size: contain;
   content: '';
   width: 100%;
-  height:70px;
+  height:100px;
   position: absolute;
   z-index: 2;
   bottom: -30px;

@@ -20,11 +20,11 @@
       </div>
     </nav>
     <div id="show" style='background-color:white;'></div>
-    <div id="card" class="container-fluid hidden">
-      <div class="row">
-        <div class="voiceinator">
-
-          <h1>Practive listen</h1>
+    <div>
+      <div id='card' class="voiceinator container-fluid hidden">
+        <div class="row">
+          <div>
+            <h1>Practive listen</h1>
     
           <select name="voice" id="voices">
             <option value="">Select A Voice</option>
@@ -39,16 +39,22 @@
           <textarea name="text">Type something here..</textarea>
           <button id="stop">Stop!</button>
           <button id="speak">Speak</button>
-    
-        </div>
-        <div class="row">
-          <a class="next" href="../game1/hithim.html">
-            >
-          </a>
+          </div>
         </div>
       </div>
+      <div id="failed" class="container-fluid hidden">
+        <div class="row">
+          <div class="faileddiv">
+            <img class="meme" src="images/meme1.jpg">
+            <div id="failedtext" class="failedtext">
+            </div>
+          </div>
+        </div>
+      </div>
+        <a class="next" href="../game1/hithim.html">
+          >
+        </a>
     </div>
-
     <script src="https://unpkg.com/bowser@2.7.0/es5.js"></script>
     
 
@@ -71,14 +77,15 @@
   var result = bowser.getParser(window.navigator.userAgent);
   browserName=result.parsedResult.browser.name;
   console.log(browserName);
-  document.write("You are using " + result.parsedResult.browser.name +
-               " v" + result.parsedResult.browser.version + 
-               " on " + result.parsedResult.os.name);
+
 
   if(browserName==="Firefox" || data()==false){
     document.getElementById('card').classList.remove('hidden')
   }else{
-    
+    document.getElementById('failed').classList.remove("hidden");
+    document.getElementById('failedtext').innerText = ("You are using " + result.parsedResult.browser.name +
+               " v" + result.parsedResult.browser.version + 
+               " on " + result.parsedResult.os.name)+" which is a mistake!!";
   }
 
 

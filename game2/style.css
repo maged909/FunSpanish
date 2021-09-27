@@ -27,7 +27,7 @@ body {
 .voiceinator {
   padding: 2rem;
   width: 50rem;
-  margin: 0 auto;
+  max-width: 100%;
   border-radius: 1rem;
   position: relative;
   background: white;
@@ -100,6 +100,8 @@ a.next{
   color: white;
   width: 4rem;
   margin: 1rem;
+  border-radius: 10%;
+  display: block;
 }
 
 @media screen and (min-width: 630px) {
@@ -108,4 +110,24 @@ a.next{
   bottom: 1rem;
   right: 1rem;
   }
+}
+
+.failedtext{
+  font-size: 2rem;
+}
+div.faileddiv{
+  margin: auto; display: block; background-color: #464660;  color:white; font-weight: 700;
+  padding: 1rem;
+  max-width: 80%;
+  text-align: center;
+  border-radius: 10%;
+  position: absolute;
+  margin-top:3rem ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.meme{
+  max-width: 100%;
+  border-radius: 10%;
 }

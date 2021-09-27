@@ -1,0 +1,16 @@
+.end{
+    text-align: center;
+    background-color: #464660;
+    font-size: 5vw;
+    font-weight: 700;
+    color: aliceblue;
+}
+.myslide{
+    width: 100%;
+    max-height: 40vw;
+    background-color: black;
+    margin-bottom: 1rem;
+}
+.myslide:hover{
+    opacity: 90%;
+}
