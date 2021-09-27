@@ -138,10 +138,11 @@
     }
     if (!audio) return;
     
-    setTimeout(function() {
+    clearTimeout()
+      setTimeout(function() {
       document.getElementById('ModalBtn').click()
       console.log('timeout')
-    }, 20000); 
+      }, 2000); 
 
     key.classList.add('playing');
     audio.currentTime = 0;
