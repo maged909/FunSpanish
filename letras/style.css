@@ -74,3 +74,6 @@ a.link{
   cursor: pointer;
   font-size: 7rem;    
 }
+.slap{
+  max-width: 100%;
+}
