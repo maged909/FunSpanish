@@ -1,40 +1,80 @@
-body{
-    background-color: #F1E9E5;
+html {
+  font-size: 10px;
 }
-nav div a.white{
-    color: #F1E9E5;
+
+body,html {
+  margin: 0;
+  padding: 0;
+  background: url('./background.png') bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: sans-serif;
 }
-.spann{
-    color: #368B85;
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 90vh;
+  align-items: center;
+  justify-content: center;
 }
-.mainParagraph{
-    margin-top: 10%;
-    text-align: center;
-    padding:1.1rem;
-    font-weight: 500;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #464660;
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
 }
-.mainContainer{
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -70%);
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
 }
-.startbtn{
-    border-radius: 10%;
-    background-color: #464660;
-    color: #F1E9E5;
-    font-weight: bold;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%)
+
+.key div {
+  display: block;
+  font-size: 4rem;
 }
-.startbtn:hover{
-    border: 0.25rem solid #464660;
-    color: #F1E9E5;
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: lowercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
 }
-.spanInParag:hover{
-    color: #368B85;
-    font-weight: 600;
+.paragraph,.listen{
+  font-weight: 600;
+  font-size: 3rem;
+}
+.paragraph{
+  color: white;
+  text-align: center;
+  background-color: #464660;
+  padding-bottom: 1rem;
+}
+.listen{
+  background-color: #464660;
+  color: white;
+  border-radius: 10%;
+  cursor: pointer;
+}
+.listen:hover{
+  color: #368B85;
+}
+a.link{
+  cursor: pointer;
+  font-size: 7rem;    
+}
+
+.slap{
+  max-width: 100%;
 }
