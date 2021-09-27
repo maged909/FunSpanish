@@ -67,7 +67,13 @@
   };
   console.log(data());
 
-  document.getElementById('show').innerText=data();
+  
+   var result = bowser.getParser(window.navigator.userAgent);
+  console.log(result.parsedResult.browser.name);
+  document.write("You are using " + result.parsedResult.browser.name +
+               " v" + result.parsedResult.browser.version + 
+               " on " + result.parsedResult.os.name);
+  document.getElementById('show').innerText=result.parsedResult.browser.name;
 
 
   function populateVoices() {
